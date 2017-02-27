@@ -21,15 +21,18 @@ var Style = StyleSheet.create({
     borderWidth: 0.5,
     borderColor: '#91AA9D'
     },
+    // the size of the text for each button on the calculator
     inputButtonText: {
     fontSize: 22,
     fontWeight: 'bold',
     color: 'white'
-  },
-  inputRow: {
+    },
+    // the styling with flex 1 allows for all the rows to take up
+    // enough space on the screen to look like a calculator
+    inputRow: {
     flex: 1,
     flexDirection: 'row'
-  }
+    }
 });
 
 export default Style;
