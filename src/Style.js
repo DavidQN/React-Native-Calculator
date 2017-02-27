@@ -25,7 +25,11 @@ var Style = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
     color: 'white'
-    }
+  },
+  inputRow: {
+    flex: 1,
+    flexDirection: 'row'
+  }
 });
 
 export default Style;
