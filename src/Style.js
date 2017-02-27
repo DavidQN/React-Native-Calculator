@@ -7,7 +7,15 @@ var Style = StyleSheet.create({
     // the top of the calculator
     displayContainer: {
         flex: 2,
-        backgroundColor: '#193441'
+        backgroundColor: '#193441',
+        justifyContent: 'center'
+    },
+    displayText: {
+        color: 'white',
+        fontSize: 38,
+        fontWeight: 'bold',
+        textAlign: 'right',
+        padding: 20
     },
     // the number part of calculator
     inputContainer: {

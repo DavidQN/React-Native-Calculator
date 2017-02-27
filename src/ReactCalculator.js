@@ -18,14 +18,25 @@ const inputButtons = [
 
 class ReactCalculator extends Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            inputValue: 0
+        }
+    }
+
+
     render() {
         return (
-          <View style={Style.rootContainer}>
-              <View style={Style.displayContainer}></View>
-              <View style={Style.inputContainer}>
-                {this._renderInputButtons()}
-              </View>
-          </View>
+            <View style={Style.rootContainer}>
+                <View style={Style.displayContainer}>
+                    <Text style={Style.displayText}>{this.state.inputValue}</Text>
+                </View>
+                <View style={Style.inputContainer}>
+                    {this._renderInputButtons()}
+                </View>
+            </View>
         )
     }
 
@@ -49,14 +60,24 @@ _renderInputButtons() {
                     key={r + "-" + i}/>
             );
         }
-
         views.push(<View style={Style.inputRow} key={"row-" + r}>{inputRow}</View>)
     }
-
     return views;
 }
+
 _onInputButtonPressed(input) {
-    alert(input)
+    switch (typeof input) {
+        case 'number':
+            return this._handleNumberInput(input)
+    }
+}
+
+_handleNumberInput(num) {
+    let inputValue = (this.state.inputValue * 10) + num;
+
+    this.setState({
+        inputValue: inputValue
+    })
 }
 
 }
