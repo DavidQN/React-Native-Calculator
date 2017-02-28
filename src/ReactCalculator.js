@@ -167,7 +167,7 @@ _handleStringInput(str) {
           break;
 
           //converts number to negative
-          //stack overflow stack overflow stack overflow
+          //stack overflo']w stack overflow stack overflow
           case "+/-":
           this.setState({
             inputValue: -Math.abs(this.state.currentInputValue),
