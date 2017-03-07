@@ -4,6 +4,7 @@
 - first you will need to clone the project into a folder of your choice
 - cd ReactCalculator
 - npm install
+- react-native run-ios
 - npm start
 
 That should be it! :D
