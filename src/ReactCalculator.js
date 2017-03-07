@@ -76,6 +76,7 @@ _renderInputButtons() {
                     key={r + "-" + i}/>
             );
         }
+        // pushing all the buttons into the views
         views.push(<View style={Style.inputRow} key={"row-" + r}>{inputRow}</View>)
     }
     return views;
