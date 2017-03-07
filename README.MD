@@ -27,3 +27,11 @@ feel free to tinker with it and if you spot any bugs go on and submit an issue :
 - Convert to negative(+/-)
 - Decimal(.)
 - Equal(=)
+
+
+<img width="373" alt="screen shot 2017-03-06 at 8 59 26 pm" src="https://cloud.githubusercontent.com/assets/23644019/23639304/f76383fe-02b4-11e7-83db-6903cda3f365.png">
+
+
+#Issues with the App
+- It works if you multiply a decimal number with a whole number, but if you multiply two decimal numbers together you will get an error
+- If you spot more errors, please don't hesitate to submit an issue. 
